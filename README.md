@@ -1,5 +1,7 @@
 # WIP 👾
 
+---
+
 # Frontend Mentor - Coffeeroasters subscription site solution
 
 This is a solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -9,7 +11,7 @@ This is a solution to the [Coffeeroasters subscription site challenge on Fronten
 - [Overview](#overview)
   - [The challenge](#the-challenge)
     - [Added features](#added-features)
-  - [Expected bahaviour](#expected-bahaviour)
+  - [Expected behavior](#expected-behavior)
   - [Links](#links)
   - [Screenshot](#screenshot)
 - [My process](#my-process)
@@ -26,11 +28,11 @@ Users should be able to:
 - See hover states for all interactive elements throughout the site
 - Make selections to create a coffee subscription and see an order summary modal of their choices
 
-### Added features
+#### Added features
 
 -
 
-### Expected bahaviour
+### Expected behavior
 
 The interactive subscription page has a number of specific behaviours, which are listed below:
 
@@ -66,7 +68,7 @@ The interactive subscription page has a number of specific behaviours, which are
 
 - [Solution on Frontend Mentor]()
 
-- [Live site]()
+- [Live site](https://fm-coffeeroasters-9000.netlify.app/)
 
 ### Screenshot
 
