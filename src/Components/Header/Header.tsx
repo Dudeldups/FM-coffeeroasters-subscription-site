@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import useToggle from "../../hooks/useToggle";
 import { NavLink } from "react-router-dom";
 
@@ -10,8 +11,26 @@ import "./Header.scss";
 export default function Header() {
   const [isHamburgerOpen, toggleIsHamburgerOpen] = useToggle(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <img
         src={logo}
         className="header__logo"
@@ -35,9 +54,15 @@ export default function Header() {
         />
       </button>
       <nav className="nav">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="about">About us</NavLink>
-        <NavLink to="subscribe">Create your plan</NavLink>
+        <NavLink to="/" onClick={toggleIsHamburgerOpen}>
+          Home
+        </NavLink>
+        <NavLink to="about" onClick={toggleIsHamburgerOpen}>
+          About us
+        </NavLink>
+        <NavLink to="subscribe" onClick={toggleIsHamburgerOpen}>
+          Create your plan
+        </NavLink>
       </nav>
     </header>
   );

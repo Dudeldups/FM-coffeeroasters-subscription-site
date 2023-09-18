@@ -34,7 +34,13 @@ export default function Home() {
       tenetur! Numquam ab dignissimos voluptas. Autem vitae modi officia unde
       esse magnam reiciendis quidem provident illo recusandae adipisci repellat,
       aliquid nihil deleniti accusantium quasi. Laborum ullam alias maiores aut
-      placeat inventore omnis beatae vitae a!
+      placeat inventore omnis beatae vitae a! Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Distinctio, sint! Mollitia, excepturi totam
+      aperiam cum minima cumque blanditiis ad corrupti. Magnam nihil architecto
+      eaque eveniet ab exercitationem fugiat pariatur repudiandae! Unde tempore
+      nisi molestiae exercitationem, ullam sapiente nulla dolorum. Modi!
+      Placeat, sequi! Nesciunt labore cupiditate consequuntur sunt dolorem
+      architecto officiis.
     </div>
   );
 }

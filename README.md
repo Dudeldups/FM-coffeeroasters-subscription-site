@@ -30,7 +30,7 @@ Users should be able to:
 
 #### Added features
 
--
+- Colored the header on scroll so the page doesn't look too monotonous
 
 ### Expected behavior
 

@@ -1,24 +1,49 @@
 @use "../../scss/abstracts" as *;
 
 .header {
+  position: sticky;
+  top: 0;
   z-index: 10;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 2rem 2.56rem;
+  padding-block: 2rem;
   @include padding-inline;
   @include max-width-content;
+  background: $clr-bg-main;
+  transition: box-shadow 200ms ease-in, background 400ms ease-in;
+
+  &.scrolled {
+    box-shadow: 0 -0.4rem 0.6rem 0.35rem rgba($clr-grey-900, 0.5);
+    background: $clr-secondary-500;
+  }
+
+  &__logo {
+    width: 10.14431rem;
+    height: 1.08175rem;
+
+    @include mq($bp-tablet) {
+      width: 14.6875rem;
+      height: 1.5625rem;
+    }
+  }
 }
 
 .hamburgerButton {
+  background: transparent;
+
+  @include mq($bp-tablet) {
+    display: none;
+  }
 }
 
 .nav {
   display: flex;
+  gap: 2.06rem;
   align-items: center;
 
   @include mq($until: $bp-tablet) {
+    // mobile hamburger nav menu
     z-index: -1;
     position: absolute;
     inset: auto 0 0 0;
@@ -26,8 +51,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    padding-block: 2.5rem 18rem;
-    background: $clr-bg-main;
+    padding-block: 3.06rem 18rem;
     background: linear-gradient(
       180deg,
       $clr-bg-main 0%,
@@ -36,6 +60,7 @@
     );
     transition: transform 800ms ease-in-out, opacity 700ms ease-in 100ms;
 
+    // closed state
     [aria-pressed="false"] + & {
       transform: translateY(0);
       opacity: 0;
