@@ -31,7 +31,7 @@ body {
   text-decoration: none;
 }
 
-.nav {
+.header__nav {
   font-family: "Fraunces";
   font-weight: 900;
   font-size: 1.5rem;
@@ -45,5 +45,15 @@ body {
     letter-spacing: 0.05769rem;
     text-transform: uppercase;
     color: $clr-grey-300;
+    color: mix($clr-grey-300, black, 86%);
   }
+}
+
+.footer__nav {
+  font-family: "Barlow-bold";
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05769rem;
+  text-transform: uppercase;
+  color: mix($clr-grey-300, white, 84%);
 }

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import closeIcon from "/assets/shared/mobile/icon-close.svg";
 import hamburgerIcon from "/assets/shared/mobile/icon-hamburger.svg";
-import logo from "/assets/shared/desktop/logo.svg";
+import CoffeeroastersLogo from "../CoffeeroastersLogo";
 
 import "./Header.scss";
 
@@ -31,13 +31,8 @@ export default function Header() {
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <img
-        src={logo}
-        className="header__logo"
-        alt="coffeeroasters logo"
-        width="162"
-        height="17"
-      />
+      <CoffeeroastersLogo />
+
       <button
         className="hamburgerButton"
         onClick={toggleIsHamburgerOpen}
@@ -53,7 +48,8 @@ export default function Header() {
           height="15"
         />
       </button>
-      <nav className="nav">
+
+      <nav className="header__nav">
         <NavLink to="/" onClick={toggleIsHamburgerOpen}>
           Home
         </NavLink>

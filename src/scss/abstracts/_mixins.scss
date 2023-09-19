@@ -49,6 +49,7 @@
 }
 
 @mixin max-width-content($add: 0) {
+  width: 100%;
   max-width: px2rem($max-width-content) + 2 * $padding-inline-max + $add;
   margin-inline: auto;
 }

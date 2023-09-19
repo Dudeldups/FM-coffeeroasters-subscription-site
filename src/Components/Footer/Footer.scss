@@ -1,1 +1,89 @@
 @use "../../scss/abstracts" as *;
+
+.footer {
+  @include padding-inline;
+  @include max-width-content;
+  margin-top: 7.5rem;
+  padding-bottom: 4.5rem;
+
+  @include mq($bp-desktop) {
+    padding-bottom: 5.5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3.4rem;
+    background: $clr-grey-950;
+
+    @include mq($bp-desktop) {
+      flex-direction: row;
+      padding-block: 3rem;
+      padding-inline: $padding-inner-desktop;
+    }
+  }
+
+  & .coffeeroastersLogo {
+    width: 13.55769rem;
+    height: 1.44231rem;
+
+    @include mq($bp-tablet) {
+      width: 14.6875rem;
+      height: 1.5625rem;
+    }
+
+    & path:first-child {
+      fill: $clr-white;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-block: 3rem;
+
+    @include mq($bp-tablet) {
+      flex-direction: row;
+      gap: 2rem;
+      margin-block: 2rem 4rem;
+    }
+
+    @include mq($bp-desktop) {
+      margin-block: 0;
+      margin-left: get-clamp(2.5rem, 6.44rem, $bp-desktop, 1200px);
+      margin-right: auto;
+    }
+
+    & a {
+      transition: color 100ms ease-in-out;
+      @include hoverfocus {
+        color: $clr-white;
+      }
+    }
+  }
+
+  &__logoContainer {
+    display: flex;
+    gap: 1.5rem;
+
+    & a {
+      & path {
+        transition: fill 200ms ease-in;
+      }
+
+      @include hoverfocus {
+        & path {
+          fill: $clr-secondary-500;
+        }
+      }
+    }
+
+    & svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

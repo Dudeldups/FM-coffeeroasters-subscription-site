@@ -7,12 +7,12 @@ import Footer from "../../Components/Footer/Footer";
 
 export default function Root() {
   return (
-    <>
+    <div className="rootLayout">
       <Header />
       <main className="main">
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
