@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 import CoffeeroastersLogo from "../CoffeeroastersLogo";
 import FacebookLogo from "../FacebookLogo";
-import TwitterLogo from "../TwitterLogo";
 import InstagramLogo from "../InstagramLogo";
+import XLogo from "../XLogo";
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
             <FacebookLogo />
           </a>
           <a href="#">
-            <TwitterLogo />
+            <XLogo />
           </a>
           <a href="#">
             <InstagramLogo />

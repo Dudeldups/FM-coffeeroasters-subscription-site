@@ -34,7 +34,7 @@
     }
 
     & path:first-child {
-      fill: $clr-white;
+      fill: $clr-bg-main;
     }
   }
 
@@ -71,6 +71,7 @@
 
     & a {
       & path {
+        fill: $clr-bg-main;
         transition: fill 200ms ease-in;
       }
 
