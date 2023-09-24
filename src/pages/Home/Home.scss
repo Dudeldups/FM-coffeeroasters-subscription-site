@@ -63,9 +63,41 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include mq($bp-tablet) {
+      transform: translateY(60%);
+    }
   }
 }
 
 .coffeeList {
+  z-index: 2;
+  display: grid;
+  gap: 3rem;
   margin-top: 2rem;
+  list-style: none;
+}
+
+.coffee {
+  display: grid;
+  gap: 1.5rem;
+
+  @include mq($from: $bp-tablet, $until: $bp-desktop) {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  &__img {
+    max-width: 12.5rem;
+    justify-self: center;
+
+    @include mq($bp-tablet) {
+      max-width: 15.9375rem;
+    }
+  }
+
+  &__desc {
+    margin-top: 1rem;
+    max-width: 34ch;
+  }
 }

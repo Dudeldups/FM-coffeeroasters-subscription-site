@@ -42,11 +42,13 @@ export default function Home() {
               alt="A bag of Gran Espresso"
               className="coffee__img"
             />
-            <h3 className="coffee__title">Gran Espresso</h3>
-            <p className="coffee__desc">
-              Light and flavorful blend with cocoa and black pepper for an
-              intense experience
-            </p>
+            <div className="coffe__text">
+              <h3 className="coffee__title">Gran Espresso</h3>
+              <p className="coffee__desc">
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience
+              </p>
+            </div>
           </li>
 
           <li className="coffee">
@@ -55,11 +57,13 @@ export default function Home() {
               alt="A bag of Planalto"
               className="coffee__img"
             />
-            <h3 className="coffee__title">Planalto</h3>
-            <p className="coffee__desc">
-              Brazilian dark roast with rich and velvety body, and hints of
-              fruits and nuts
-            </p>
+            <div className="coffe__text">
+              <h3 className="coffee__title">Planalto</h3>
+              <p className="coffee__desc">
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts
+              </p>
+            </div>
           </li>
 
           <li className="coffee">
@@ -68,11 +72,13 @@ export default function Home() {
               alt="A bag of Piccollo"
               className="coffee__img"
             />
-            <h3 className="coffee__title">Piccollo</h3>
-            <p className="coffee__desc">
-              Mild and smooth blend featuring notes of toasted almond and dried
-              cherry{" "}
-            </p>
+            <div className="coffe__text">
+              <h3 className="coffee__title">Piccollo</h3>
+              <p className="coffee__desc">
+                Mild and smooth blend featuring notes of toasted almond and
+                dried cherry{" "}
+              </p>
+            </div>
           </li>
 
           <li className="coffee">
@@ -81,11 +87,13 @@ export default function Home() {
               alt="A bag of Danche"
               className="coffee__img"
             />
-            <h3 className="coffee__title">Danche</h3>
-            <p className="coffee__desc">
-              Ethiopian hand-harvested blend densely packed with vibrant fruit
-              notes
-            </p>
+            <div className="coffe__text">
+              <h3 className="coffee__title">Danche</h3>
+              <p className="coffee__desc">
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes
+              </p>
+            </div>
           </li>
         </ul>
       </article>
