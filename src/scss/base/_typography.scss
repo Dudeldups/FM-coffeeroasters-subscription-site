@@ -49,6 +49,44 @@ body {
   }
 }
 
+.intro {
+  color: $clr-bg-main;
+  text-align: center;
+
+  @include mq($bp-tablet) {
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    line-height: 100%;
+
+    @include mq($bp-tablet) {
+      font-size: 3rem;
+    }
+
+    @include mq($bp-desktop) {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__desc {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+
+    @include mq($bp-desktop) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.collection {
+  &__title {
+    font-size: 2.8rem;
+    line-height: 100%;
+  }
+}
+
 .footer__nav {
   font-family: "Barlow-bold";
   font-size: 0.75rem;

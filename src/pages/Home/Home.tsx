@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 
 import "./Home.scss";
 
+import mobileHeroImg from "/assets/home/mobile/image-hero-coffeepress.jpg";
+import tabletHeroImg from "/assets/home/tablet/image-hero-coffeepress.jpg";
+import desktopHeroImg from "/assets/home/desktop/image-hero-coffeepress.jpg";
 import espressoImg from "/assets/home/desktop/image-gran-espresso.png";
 import planaltoImg from "/assets/home/desktop/image-planalto.png";
 import piccolloImg from "/assets/home/desktop/image-piccollo.png";
@@ -9,17 +12,24 @@ import dancheImg from "/assets/home/desktop/image-danche.png";
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <article className="intro">
-        <h1 className="intro__title">Great coffee made simple.</h1>
-        <p className="intro__desc">
-          Start your mornings with the world’s best coffees. Try our expertly
-          curated artisan coffees from our best roasters delivered directly to
-          your door, at your schedule.
-        </p>
-        <button className="greenButton">
-          <Link to="/subscribe">Create your plan</Link>
-        </button>
+        <picture className="intro__heroImgContainer">
+          <source srcSet={desktopHeroImg} media="(min-width: 61.25em)" />
+          <source srcSet={tabletHeroImg} media="(min-width: 46.25em)" />
+          <img src={mobileHeroImg} alt="" aria-hidden="true" />
+        </picture>
+        <div className="intro__textContainer">
+          <h1 className="intro__title">Great coffee made simple.</h1>
+          <p className="intro__desc">
+            Start your mornings with the world’s best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
+          <button className="greenButton">
+            <Link to="/subscribe">Create your plan</Link>
+          </button>
+        </div>
       </article>
 
       <article className="collection">
@@ -154,6 +164,6 @@ export default function Home() {
           <Link to="/subscribe">Create your plan</Link>
         </button>
       </article>
-    </>
+    </div>
   );
 }
