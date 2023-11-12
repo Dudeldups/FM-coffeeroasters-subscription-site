@@ -110,6 +110,47 @@ body {
   }
 }
 
+.whyUs {
+  color: $clr-bg-main;
+  text-align: center;
+
+  &__title {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+
+    @include mq($bp-tablet) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    @include mq($bp-desktop) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__desc {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+
+    @include mq($bp-desktop) {
+      font-size: 1rem;
+      line-height: 1.625rem;
+    }
+  }
+}
+
+.benefit {
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &__desc {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
 .footer__nav {
   font-family: "Barlow-bold";
   font-size: 0.75rem;

@@ -9,6 +9,9 @@ import espressoImg from "/assets/home/desktop/image-gran-espresso.png";
 import planaltoImg from "/assets/home/desktop/image-planalto.png";
 import piccolloImg from "/assets/home/desktop/image-piccollo.png";
 import dancheImg from "/assets/home/desktop/image-danche.png";
+import coffeBeanIcon from "/assets/home/desktop/icon-coffee-bean.svg";
+import giftIcon from "/assets/home/desktop/icon-gift.svg";
+import truckIcon from "/assets/home/desktop/icon-truck.svg";
 
 export default function Home() {
   return (
@@ -99,39 +102,65 @@ export default function Home() {
       </article>
 
       <article className="whyUs">
-        <h2 className="whyUs__title">Why choose us?</h2>
-        <p className="whyUs__desc">
-          A large part of our role is choosing which particular coffees will be
-          featured in our range. This means working closely with the best coffee
-          growers to give you a more impactful experience on every level.
-        </p>
+        <header className="whyUs__header">
+          <h2 className="whyUs__title">Why choose us?</h2>
+          <p className="whyUs__desc">
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+        </header>
+
+        <div className="whyUs__bg"></div>
 
         <ul className="benefitsList">
           <li className="benefit">
-            <img src="" alt="" className="benefit__img" />
-            <h3 className="benefit__title">Best quality</h3>
-            <p className="benefit__desc">
-              Discover an endless variety of the world’s best artisan coffee
-              from each of our roasters.
-            </p>
+            <img
+              src={coffeBeanIcon}
+              alt=""
+              className="benefit__img"
+              aria-hidden="true"
+            />
+            <div className="benefit__text">
+              <h3 className="benefit__title">Best quality</h3>
+              <p className="benefit__desc">
+                Discover an endless variety of the world’s best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
           </li>
 
           <li className="benefit">
-            <img src="" alt="" className="benefit__img" />
-            <h3 className="benefit__title">Exclusive benefits</h3>
-            <p className="benefit__desc">
-              Special offers and swag when you subscribe, including 30% off your
-              first shipment.
-            </p>
+            <img
+              src={giftIcon}
+              alt=""
+              className="benefit__img"
+              aria-hidden="true"
+            />
+            <div className="benefit__text">
+              <h3 className="benefit__title">Exclusive benefits</h3>
+              <p className="benefit__desc">
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
           </li>
 
           <li className="benefit">
-            <img src="" alt="" className="benefit__img" />
-            <h3 className="benefit__title">Free shipping</h3>
-            <p className="benefit__desc">
-              We cover the cost and coffee is delivered fast. Peak freshness:
-              guaranteed.
-            </p>
+            <img
+              src={truckIcon}
+              alt=""
+              className="benefit__img"
+              aria-hidden="true"
+            />
+            <div className="benefit__text">
+              <h3 className="benefit__title">Free shipping</h3>
+              <p className="benefit__desc">
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
           </li>
         </ul>
       </article>
